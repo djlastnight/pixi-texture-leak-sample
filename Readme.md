@@ -1,5 +1,7 @@
 # A minimum sample, which demonstrates memory leak in pixi 8  
 
+link to the pixi issue: https://github.com/pixijs/pixijs/issues/11751  
+
 Steps to reproduce
 1. clone the project, then execute `npm i`  
 2. start the project `npm run dev`  
@@ -22,3 +24,4 @@ Pixi versions test results:
 8.10.1 - 0 bmfont textures leak, text object leak  
 8.10.0 - 0 bmfont textures leak, text object leak  
 8.9.2 -  0 bmfont textures leak, graphics object leak  
+
