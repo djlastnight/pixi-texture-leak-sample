@@ -48,8 +48,9 @@ import { Application, Assets, BitmapText, Container, Sprite } from "pixi.js";
       container.addChild(bitmapFontText);
     }
 
-    container.once("pointerdown", () => {
+    container.once("pointerdown", async () => {
       container.destroy(true);
+      await Assets.unload(`https://pixijs.com/assets/bitmap-font/desyrel.xml`);
     });
   });
 })();
